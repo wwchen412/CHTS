@@ -23,4 +23,4 @@ output_style = :compressed
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
-Encodeing.default_external = "UTF-8"
+Encoding.default_external = "UTF-8";

@@ -1,4 +1,4 @@
-``@import 'compass/css3';
+@import 'compass/css3';
 @import '_mixin.scss';
 $maincolor: #000;
 *,
@@ -228,4 +228,16 @@ p {
         padding: 20px;
         margin: 10vw 0;
     }
+}
+
+.btn-scrolltop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    background-color: rgba(#000, .6);
+    color: rgba(#f00, .6);
+    z-index: 3;
+    cursor: pointer;
+    display: none;
 }

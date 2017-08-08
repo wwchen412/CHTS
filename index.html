@@ -100,7 +100,7 @@
 
 
         </div>
-        <div id="section1">
+        <div id="section1" class="section">
             <div class="bg-title">
                 <h2>台商至中國商旅現況</h2>
             </div>
@@ -128,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <div id="section2">
+        <div id="section2" class="section">
             <div class="bg-title">
                 <h2>知名五星飯店格蘭雲天意外台商死亡事件</h2>
             </div>
@@ -158,7 +158,7 @@
                 </div>
             </div>
         </div>
-        <div id="section3">
+        <div id="section3" class="section">
             <div class="bg-title">
                 <h2>兩岸有關單位消極處理</h2>
             </div>
@@ -191,7 +191,7 @@
             </div>
 
         </div>
-        <div id="section4">
+        <div id="section4" class="section">
             <div class="bg-title">
                 <h2>後續事件現況追蹤</h2>
             </div>
@@ -204,9 +204,41 @@
             </div>
         </div>
     </div>
-
+    <div class="btn-scrolltop">
+        回到頂端
+    </div>
     <!-- jQuery JS 1.12.4 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var bodyHeight_31 = $('body').height() / 3;
+            console.log(bodyHeight_31);
+            var $window = $(window);
+            var blockTop = 0;
+            var nav_index = 0;
+
+            $('#header ul li.hidden-xs').click(function() {
+                nav_index = $(this).index();
+                blockTOP = $('.section').eq(nav_index).offset().top;
+                $('body,html').stop(true, false).animate({
+                    scrollTop: blockTOP - 82
+                })
+            })
+            $window.scroll(function() {
+                if ($window.scrollTop() >= bodyHeight_31) {
+
+                    $('.btn-scrolltop').fadeIn();
+                } else {
+                    $('.btn-scrolltop').fadeOut();
+                }
+            })
+            $('.btn-scrolltop').click(function() {
+                $('body,html').stop(true, false).animate({
+                    scrollTop: 0
+                })
+            })
+        })
+    </script>
 </body>
 
 </html>
