@@ -69,7 +69,10 @@ p {
     left: 0;
     z-index: 2;
     pointer-events: none;
-    opacity: .5;
+    opacity: .8;
+    @include breakpoint(mobile) {
+        opacity: .1;
+    }
 }
 
 //  header
