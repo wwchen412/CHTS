@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>中國五星級殺人酒店</title>
+    <title>Document</title>
+    <!-- Bootstrap CSS 3.3.7 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/noise.css">
+    <!-- Bootstrap JS 3.3.7 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
     <div id="fb-root"></div>
@@ -43,17 +44,22 @@
             <ul>
                 <li class="hidden-xs">
                     <a href="#">
-                    中國旅遊現況
+                    台商中國商旅現況
                 </a>
                 </li>
                 <li class="hidden-xs">
                     <a href="#">
-                    格蘭雲天酒店 死亡慘案
+                    格蘭雲天意外台商死亡事件
                 </a>
                 </li>
                 <li class="hidden-xs">
                     <a href="#">
-                    拒絕下一個受害者
+                    兩岸有關單位消極處理
+                </a>
+                </li>
+                <li class="hidden-xs">
+                    <a href="#">
+                    後續事件現況追蹤
                 </a>
                 </li>
 
@@ -90,45 +96,42 @@
     </div>
     <div id="wrap">
         <div class="fix-light"></div>
-        <div id="heroimg" class="blink">
+        <div id="heroimg">
 
             <div class="title">
-                <div class="titleinner">
-                    <h1>中國五星級殺人酒店
-                        <span> 
-                    <br> 時間：2015年10月
-                    <br> 地點：中國貴陽格蘭雲天酒店
-                    <br> 危機一：室內地板施工不良，地毯拱起形成波浪狀，導致室內地面凹凸不平
-                    <br> 危機二：金屬包邊垃圾桶收邊上緣處薄如刀刃，品質低劣
-                    <br> 危機三：客房服務疏忽，金屬製垃圾桶未依標準位置放置，而隨意放置在房間正中央 
-                    <br>危機四：五星級酒店完全無危機處理機制</span>
-                    </h1>
-                </div>
-
-
+                <h1>關於中國商旅你不能不知！</h1>
             </div>
 
 
-
         </div>
-        <!--        連署標題-->
-        <div class="">
-            <p>呼籲國內外人士一同注意旅遊安全，讓相關單位重視此問題如果您也認同，請按 「 我要支持 」</p>
-            <button>我要支持</button>
-        </div>
-        <!--        結束-->
         <div id="section1" class="section">
             <div class="bg-title">
-                <h2>中國旅遊現況</h2>
+                <h2>台商至中國商旅現況</h2>
+                <div class="text"></div>
+                <button type="button" onclick="window.location.reload()" style="background:#000;">就這樣啦</button>
+                
+                <?php
+                $counter = intval(file_get_contents("counter.dat"));
+                
+                if (!isset($_COOKIE['visitor'])) {
+                    $counter++;
+                    $fp = fopen("counter.dat", "w");
+                    flock($fp, LOCK_EX);   // do an exclusive lock
+                    fwrite($fp, $counter);
+                    flock($fp, LOCK_UN);   // release the lock
+                    fclose($fp);
+                    setcookie("visitor", 1, time()+3600);
+                }
+                echo "Visitors: " . $counter ;
+                ?>
             </div>
             <div class="container">
                 <div class="content">
                     <div class="row">
                         <div class="col-md-5">
                             <div class="num-text">
-                                <p>
-                                    前往中國洽公及旅遊人數年年攀升，且大部份是來自亞洲地區之旅客、商務客。旅客除了一線城市，近年來也逐漸延伸至二三線城市及許多其他知名景點，但相對地，消費糾紛不斷攀升。
-                                    <br> 中國二三線城市最令人詬病的種種問題一一浮現檯面，如衛生環境堪憂、旅遊市場秩序混亂、詐騙案增加，甚至存在黑惡勢力的影響；旅遊不文明現象時常發生 ，如治安不佳、遇糾紛求償無門、地方角力等，且外地人申報公安後難獲得妥善的處理；當旅遊涉外糾紛日益增加，旅遊大外交格局尚未形成，造成旅客在中國有許多糾紛皆無法解決，甚至遭遇到人身安全也無機關可管，連申訴管道都有問題。
+                                <p> 因兩岸關係開放影響，國人至中國旅遊意願增加， 使得中國旅遊及商旅人次大增。除了一線城市也逐漸跨 足至二三線城市以及知名景點旅遊機會大增，但是糾紛 也相對增加。 中國二三線最令人詬病的種種問題一一浮現檯面， 如旅遊市場秩序混亂，有些地方旅遊市場亂象叢生，甚 至存在黑惡勢力的影響；旅遊不文明現象時常發生，如 插隊、大聲咆哮；旅遊廁所還達不到遊客的要求，與國 際標準還有很大差距；旅遊涉外糾紛日益增加，旅遊大 外交格局還沒有形成等等，造成台灣國人在中國有許多
+                                    糾紛無法解決，甚至遭遇到人身安全也無法也無機關可 管，連申訴管道都有問題。
                                 </p>
                             </div>
 
@@ -146,17 +149,14 @@
         </div>
         <div id="section2" class="section">
             <div class="bg-title">
-                <h2>格蘭雲天酒店 死亡慘案！！</h2>
+                <h2>知名五星飯店格蘭雲天意外台商死亡事件</h2>
             </div>
             <div class="container">
                 <div class="content">
                     <div class="row">
                         <div class="col-md-12">
-                            <p>
-                                旅客任先生受邀參加2015年在貴陽舉辦的世界众籌大會因而下榻貴陽格蘭雲天酒店，因室內地板施工不良，地毯拱起形成波浪狀，導致室內地面凹凸不平，而地毯厚重又有花紋需公安手電筒放地上才能清晰看到。任先生因而絆倒，絆倒後的金屬包邊垃圾桶未依標準位置放置且垃圾桶上方收邊處尖銳，任先生的頭部直接撞擊金屬包邊垃圾桶，導致腦部重創流血不止。家屬緊急告知酒店請求協助，救護車在40分鐘後才抵達至酒店，任先生因額頭處有長達8CM的傷口，深達骨皮質，任先生於救護人員抵達時，已經沒有生命徵狀；醫院方經過一個小時的急救，仍回天乏術。
-                            </p>
-                            <p>
-                                事後，格蘭雲天酒店總經理向家屬表示，他們是央企，有異議請至法院訴訟解決，完全不反省酒店方需要檢討自身酒店的設備及安全問題。
+                            <p> 201510月 台灣旅客任先生住宿於貴陽格蘭雲天，因房內不平均厚地毯絆倒頭部直接撞擊 未依照標準位置放置的鐵製垃圾桶，腦部重創安全流程延誤40分鐘救護車才抵達，任先生不 幸送醫不治，而格蘭雲天僅以五萬元人民幣表示慰問，並無為了自身飯店設施不良且安全流 程不足等因素公開道歉以及承諾未來設施改善表示負責。 期間像貴陽法院提出訴訟，貴陽法院表示須由海基會海協會提出訴訟，轉而聯繫海基會 海協會，卻又表示並無此業務協助。台灣旅客在中國的權利完全無單位可以保障，也無管道
+                                進行申訴，對於在中國的跨境旅客簡直置身無法治國家！！
                             </p>
                         </div>
                         <div class="col-md-4">
@@ -179,35 +179,45 @@
         </div>
         <div id="section3" class="section">
             <div class="bg-title">
-                <h2>事後處理</h2>
+                <h2>兩岸有關單位消極處理</h2>
             </div>
             <div class="container">
                 <div class="content">
                     <div class="row">
-                        <div class="col-md-12" style="background-color: white;padding: 30px;border-radius: 5px;margin: 10px auto;">
-                            <h3>公安局：</h3>
-                            <p>
-                                1.貴陽市公安局經濟技術開發區長江公安分局出警並在現場拍攝大量照片，並有派人至醫院太平間驗屍
-                                <br>2.家屬委託律師前往公安局希望調取卷宗，卻遭拒絕。
-                                <br>3.酒店方委託律師親口承認，得以完整調閱卷宗相關內容。
-                                <br>4.公安局做出「意外」死亡結論。
-                            </p>
+                        <div class="col-md-4">
+                            <div class="unit">
+                                <h3>貴陽格蘭雲天</h3>
+                                <p> 僅五萬元人民幣表示慰問， 並未面對事件給予家屬道歉及 承諾未來飯店設施改善，僅表 視此為單一突發事件，不承認 飯店有所疏失，將旅客的人身 安全置之無物。
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-md-12" style="background-color: white;padding: 30px;border-radius: 5px;">
-                            <h3>法院：</h3>
-                            <p>
-                                1.第一次向酒店的所在地，「貴陽市花溪區人民法院」提出訴訟，法院經過幾個月後審查，以「本案涉台」的理由，將案件移送到「貴陽市中級人民法院」。
-                                <br>2.「貴陽市中級人民法院」一年多後才開庭審理，拒絕本案現場證人進入法庭，原因是「台灣籍人士不方便旁聽」。
-                                <br>3.2017年初「貴陽市中級人民法院」駁回起訴，裁定理由為：「家屬所提供的原告家屬的身份證明文件是由律師自行前往兩岸海協會、海基會公證處領取，而非由兩岸海協會、海基會公證處寄送給院方，故此文件無從認定原告家屬與被害者的關係，故原告家屬不具備原告資格」
-                            </p>
+                        <div class="col-md-4">
+                            <div class="unit">
+                                <h3>貴陽法院</h3>
+                                <p> 事件發生後家屬進行提告， 經過近一年的時間，才告知此 案件須經由海基會、海協會提 告，台灣不得以個人單位進行 提告。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="unit">
+                                <h3>海基會、海協會</h3>
+                                <p> 家屬轉達貴陽法院公告，僅 表示無法提供業務、無此案例 ，並未協助進一步全力爭取， 形同虛設。
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <div id="section4" class="section">
+            <div class="bg-title">
+                <h2>後續事件現況追蹤</h2>
+            </div>
             <div class="container">
                 <div class="content">
+                    <p>201701貴陽法院表示台灣民眾不得以個人進行訴訟，須經由海基會、海協會進行 訴訟，海基海協會表示對於台灣民眾沒有此業務服務提供，導致整體事件羅生門， 此為貴州當地知名五星級飯店之案例，台灣人民以及全球華人在中國地區旅遊毫無 保障可言。目前全案正透過當地律師協助尋求其他管道進行訴訟以及申訴。
+                    </p>
                     <div class="fb-comments" data-href="https://wwchen412.github.io/CHTS/" data-numposts="5"></div>
                 </div>
             </div>
@@ -219,12 +229,15 @@
     <!-- jQuery JS 1.12.4 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+        
+
         new Clipboard('.btn');
         var clipboard = new Clipboard('.btn');
         clipboard.on('success', function(e) {
             alert('已複製連結');
         });
         $(function() {
+       
             var bodyHeight_31 = $('body').height() / 3;
             console.log(bodyHeight_31);
             var $window = $(window);
