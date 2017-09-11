@@ -23,15 +23,13 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
     <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.10&appId=256834864809662";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.10&appId=256834864809662";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     </script>
 </head>
 
@@ -53,7 +51,7 @@
                 </li>
                 <li class="hidden-xs">
                     <a href="#">
-                    拒絕下一個受害者
+                    事後處理
                 </a>
                 </li>
 
@@ -208,6 +206,12 @@
                                 <br>3.2017年初「貴陽市中級人民法院」駁回起訴，裁定理由為：「家屬所提供的原告家屬的身份證明文件是由律師自行前往兩岸海協會、海基會公證處領取，而非由兩岸海協會、海基會公證處寄送給院方，故此文件無從認定原告家屬與被害者的關係，故原告家屬不具備原告資格」
                             </p>
                         </div>
+                        <div class="col-md-12" style="background-color: white;padding: 30px;border-radius: 5px;margin-top:10px;">
+                            <h3>貴州省公證協會：</h3>
+                            <p>
+                            兩岸公證文件，都是由當事人自行領取，協會方絕不會代為寄送給院方。
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -216,7 +220,7 @@
         <div id="section4" class="section">
             <div class="container">
                 <div class="content">
-                    <div class="fb-comments" data-href="https://wwchen412.github.io/CHTS/" data-numposts="5"></div>
+                <div class="fb-comments" data-href="http://horrorhotel.tk/" data-numposts="5"></div>
                 </div>
             </div>
         </div>
