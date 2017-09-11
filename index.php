@@ -117,7 +117,7 @@
             <button name="clickMe" onclick="countIt();">我要支持</button>
             <p>
                 目前支持人數
-                <span class="num">
+                <span class="num" style="font-size:1.2rem;color:#f00;">
                 <?= intval(file_get_contents("number.dat")) ?>
                 </span>人
             </p>
