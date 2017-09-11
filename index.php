@@ -113,7 +113,7 @@
         </div>
         <!--        連署標題-->
         <div class="support">
-            <p>呼籲國內外人士一同注意旅遊安全，讓相關單位重視此問題如果您也認同，請按 「 我要支持 」</p>
+            <p style="border-bottom: 1px solid #900; padding-bottom: 15px;">呼籲國內外人士一同注意旅遊安全，讓相關單位重視此問題如果您也認同，請按 「 我要支持 」</p>
             <button name="clickMe" onclick="countIt();">我要支持</button>
             <p>
                 目前支持人數
@@ -150,17 +150,7 @@
                 </div>
             </div>
         </div>
-        <!--        連署標題-->
-        <div class="support">
-            <p>呼籲國內外人士一同注意旅遊安全，讓相關單位重視此問題如果您也認同，請按 「 我要支持 」</p>
-            <button name="clickMe" onclick="countIt();">我要支持</button>
-            <p>
-                目前支持人數
-                <span class="num">
-                <?= intval(file_get_contents("number.dat")) ?>
-                </span>人
-            </p>
-        </div>
+       
         <div id="section2" class="section">
             <div class="bg-title">
                 <h2>格蘭雲天酒店 死亡慘案！！</h2>
@@ -237,10 +227,11 @@
     <!-- jQuery JS 1.12.4 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-
+       
         // 點擊支持 字加一
 
         function countIt() {
+            alert('感謝您的支持！');
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
@@ -249,8 +240,9 @@
             };
             xmlhttp.open("GET", "count.php", true);
             xmlhttp.send();
+           
         }
-        // 複製研結
+        // 複製連結
         new Clipboard('.btn');
         var clipboard = new Clipboard('.btn');
         clipboard.on('success', function(e) {
