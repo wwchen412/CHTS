@@ -173,6 +173,26 @@ p {
     }
 }
 
+.support {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    p {
+        color: #fff;
+    }
+    button {
+        display: inline-block;
+        padding: 10px;
+        background-color: #f00;
+        border: 0;
+        @include border-radius(5px);
+        &+p {
+            display: inline-block;
+        }
+    }
+}
+
 #section1 {
     background-color: #900;
     .container {
