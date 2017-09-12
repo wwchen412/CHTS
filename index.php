@@ -191,13 +191,18 @@
                     <div class="row">
                         <div class="col-md-12" style="background-color: white;padding: 30px;border-radius: 5px;margin: 10px auto;">
                             <h3>公安局：</h3>
-                            <p>
-                                1.貴陽市公安局經濟技術開發區長江公安分局出警並在現場拍攝大量照片，並有派人至醫院太平間驗屍。
-                                <br>2.家屬委託律師前往公安局希望調取卷宗，卻遭拒絕。
-                                <br>3.酒店方委託律師親口承認，得以完整調閱卷宗相關內容。
-                                <br>4.公安局做出「意外」死亡結論。
-                                <br>5.公安局有做多人筆錄。
+                            <p style="display:inline-block;vertical-align:top;">
+                            1.貴陽市公安局經開分局出警力；<br>
+                            <span style="font-size:.8em;">&nbsp;&nbsp;(1)在現場拍攝大量照片。</span><br>
+                            <span style="font-size:.8em;">&nbsp;&nbsp;(2)家屬、格蘭雲天酒店方等相關人員，帶回警局做筆錄。</span><br>
+                            <span style="font-size:.8em;">&nbsp;&nbsp;(3)至醫院太平間驗屍。</span><br>
+                            2.家屬委託律師前往公安局調取相關(1)現場照片(2)多方筆錄(3)驗屍報告 等卷宗，卻遭拒絕<br>
+                              (寓意受害方完全無法調取證據更無資料依據可輔助官司證據)。 <br>
+                            3.酒店方委託律師親口承認，酒店方得以完整調閱卷宗相關內容。<br>
+                            （寓意酒店方得以調取所有相關證據卷宗,而受害方依法調取相關卷宗卻無能為力） <br>
+                            4.公安局做出「意外」死亡結論。
                             </p>
+                            <img src="images/prof.jpg" alt="" style="max-width:300px;display:inline-block;">
                         </div>
                         <div class="col-md-12" style="background-color: white;padding: 30px;border-radius: 5px;">
                             <h3>法院：</h3>
