@@ -163,22 +163,39 @@
                             <p>
                                 事後，格蘭雲天酒店總經理向家屬表示，他們是央企，有異議請至法院訴訟解決，完全不反省酒店方需要檢討自身酒店的設備及安全問題。
                             </p>
+                        </div> 
+                    </div>
+                       <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/proof2.png" alt="">
+                            <p>當地檢調單位檢視地毯不當不平之處圖</p>
+                            
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <img src="images/proof06.png" alt="">
+                           <p></p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/proof5.png" alt="">
+                           <p></p>
+                        </div>
+                        </div>
+                        <div class="row">
+                       
+                        <div class="col-md-4">
+                            <img src="images/proof3.png" alt="">
+                            <p>鐵製垃圾桶撞擊圖</p>
                         </div>
                         <div class="col-md-4">
                             <img src="images/proof1.png" alt="">
                             <p>台商任先生死亡證明</p>
                         </div>
                         <div class="col-md-4">
-                            <img src="images/proof2.png" alt="">
-                            <p>當地檢調單位檢視地毯不當不平之處圖</p>
-                            <img src="images/proof3.png" alt="">
-                            <p>鐵製垃圾桶撞擊圖</p>
-                        </div>
-                        <div class="col-md-4">
                             <img src="images/proof4.png" alt="">
                             <p>任先生無任何心血管疾病診斷證明書</p>
                         </div>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
